@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container {
+    display: grid;
+    /* background-color:brown; */
+    margin: auto;
+    margin-top: 5rem;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 10px;
+    width: 50rem;
+}
+
+.imageContainer {
+    background-color: blue;
+    min-width:200px;
+    min-height: 200px;
+}
+.card-back {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+.image {
+    width:100%;
+    height: 100%;
+    object-fit: cover;    
+}
